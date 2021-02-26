@@ -23,18 +23,19 @@ address {
   font-style: normal;
 }
 
+/* =======END COMPONENTS======== */
+
+/* =========== HEADER=========== */
+
 .logo-text {
   font-family: "raleway", serif;
   color: #000000;
   font-size: 26px;
   font-weight: bold;
 }
-.site-nav .active-page-link {
+.main-nav-link.active-page-link {
   color: var(--accent-color);
 }
-/* =======END COMPONENTS======== */
-
-/* =========== HEADER=========== */
 
 .logo-accent-color {
   color: var(--accent-color);
@@ -46,6 +47,7 @@ address {
   font-weight: 500;
   line-height: 1.14px;
   letter-spacing: 0.02em;
+  cursor: pointer;
 }
 .main-nav-link:hover,
 .main-nav-link:focus {
@@ -64,7 +66,9 @@ address {
   color: var(--accent-color);
 }
 
-/* HERO */
+/* =========== END HEADER=========== */
+
+/* ============== HERO ============ */
 
 .hero-section {
   background-color: var(--grey-bgc);
@@ -73,7 +77,7 @@ address {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--secondary-accent-color);
   font-size: 44px;
   font-weight: 700;
   text-transform: uppercase;
@@ -82,19 +86,22 @@ address {
   line-height: 1.36;
 
   width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
 }
 .hero-btn {
   min-width: 200px;
   min-height: 50px;
+  color: var(--secondary-accent-color);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   border-radius: 4px;
   outline-style: none;
   border-width: 2px;
   border-color: transparent;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
 }
 
 /* ============= feachers =============*/
@@ -115,7 +122,7 @@ address {
   overflow: hidden;
 }
 
-/* .feachers-list {
+.feachers-list {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -125,15 +132,15 @@ address {
   margin-right: auto;
   padding: 0px;
   width: 1170px;
-} */
+}
 
-/* .feachers-list .items {
+.feachers-list .items {
   width: 270px;
-} */
-/* 
+}
+
 .feachers-list .items + .items {
   margin-left: 30px;
-} */
+}
 
 .feachers-list-title {
   color: var(--secondary-text-color);
@@ -152,21 +159,21 @@ address {
   letter-spacing: 0.03em;
   line-height: 1.71;
 
-  /* display: inline-block;
+  display: inline-block;
   margin-top: 0px;
-  margin-bottom: 0px; */
+  margin-bottom: 0px;
 }
 /* ============= end feachers =============*/
 
 /*============= чем мы занимаемся ==========*/
 
-/* .container.work {
+.container.work {
   margin-top: 0px;
   margin-bottom: 94px;
   justify-content: center;
-} */
+}
 
-.description-title {
+.section-title {
   color: var(--secondary-text-color);
   font-size: 36px;
   font-weight: 700;
@@ -179,30 +186,29 @@ address {
   margin-bottom: 50px;
 }
 
-/* .description .list {
+.description .list {
   display: flex;
   margin: 0px auto;
   width: 1170px;
-} */
+}
 
-/* .description .items + .items {
+.description .items + .items {
   margin-left: 30px;
-} */
+}
 
-/* НАША КОМАНДА */
+/* ========= НАША КОМАНДА ===========*/
 
-/* .team .list {
+.team .list {
   display: flex;
   padding: 0px;
   margin: 0px auto;
   justify-content: center;
   margin-bottom: 94px;
   width: 1170px;
-} */
+}
 
-/* .team .items {
-  outline: 1px solid green;
-  background: #ffffff;
+.team .items {
+  background: var(--secondary-accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -210,18 +216,8 @@ address {
 }
 .team .items + .items {
   margin-left: 30px;
-} */
-
-.team .title {
-  color: var(--secondary-text-color);
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.17;
-
-  /* margin-top: 0px;
-  margin-bottom: 50px; */
 }
+
 .card-name {
   color: var(--secondary-text-color);
   font-size: 16px;
