@@ -61,9 +61,40 @@ address {
   line-height: 1.14px;
   letter-spacing: 0.02em;
 }
+
 .auth-nav-link:hover,
 .auth-nav-link:focus {
   color: var(--accent-color);
+}
+
+.page-header .container {
+  display: flex;
+  margin-left: 215px;
+  margin-right: 215px;
+  min-width: 1170px;
+}
+.main-nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
 }
 
 /* =========== END HEADER=========== */
@@ -88,6 +119,7 @@ address {
   width: 700px;
   margin: 0px auto;
 }
+
 .hero-btn {
   min-width: 200px;
   min-height: 50px;
@@ -99,15 +131,18 @@ address {
   border-width: 2px;
   border-color: transparent;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
 }
 
 /* ============= feachers =============*/
+
 .feachers > .container {
   margin-bottom: 94px;
 }
+
 .visually-hidden-title {
   position: absolute;
   width: 1px;
@@ -136,6 +171,7 @@ address {
 
 .feachers-list .items {
   width: 270px;
+  justify-items: center;
 }
 
 .feachers-list .items + .items {
@@ -237,9 +273,11 @@ address {
 
 /*    footer    */
 
-/* .footer .container {
-  padding: 60px 200px;
-} */
+.footer .container {
+  margin-left: 215px;
+  margin-right: 215px;
+  min-width: 1170px;
+}
 
 .footer {
   background-color: var(--grey-bgc);
