@@ -10,6 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--secondary-text-color);
   background-color: #ffffff;
+  width: 1600px;
 }
 a {
   text-decoration: none;
@@ -75,6 +76,8 @@ address {
 }
 .main-nav {
   display: flex;
+  height: 80px;
+  align-items: center;
 }
 
 .site-nav {
@@ -105,6 +108,11 @@ address {
   background-color: var(--grey-bgc);
   margin-bottom: 94px;
   text-align: center;
+  height: 600px;
+}
+
+.hero-section .container {
+  align-items: center;
 }
 
 .hero-title {
@@ -117,7 +125,7 @@ address {
   line-height: 1.36;
 
   width: 700px;
-  margin: 0px auto;
+  margin: 0px auto 30px;
 }
 
 .hero-btn {
@@ -353,14 +361,14 @@ address {
   /* box-shadow: 0px 2px 2px 0px 0, 0, 0, 0, 25; */
 }
 
-/* .work-list {
+.work-list {
   width: 1170px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
-/* .work-list .list {
+.work-list .list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
@@ -376,7 +384,7 @@ address {
 }
 .card-description {
   padding: 20px 25px;
-} */
+}
 
 .service-card-name {
   font-weight: 700;
