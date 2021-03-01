@@ -10,8 +10,19 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--secondary-text-color);
   background-color: #ffffff;
-  width: 1600px;
+  /* width: 1600px; */
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,19 +31,31 @@ a {
   margin: 0px;
   padding: 0px;
 }
-address {
-  font-style: normal;
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* =======END COMPONENTS======== */
 
 /* =========== HEADER=========== */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.page-header .container {
+  padding: 24px 15px;
+}
 
 .logo-text {
   font-family: "raleway", serif;
   color: #000000;
   font-size: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .main-nav-link.active-page-link {
   color: var(--accent-color);
@@ -70,13 +93,9 @@ address {
 
 .page-header .container {
   display: flex;
-  margin-left: 215px;
-  margin-right: 215px;
-  min-width: 1170px;
 }
 .main-nav {
   display: flex;
-  height: 80px;
   align-items: center;
 }
 
@@ -86,7 +105,7 @@ address {
   align-items: center;
 }
 
-.site-nav .item + .item {
+.site-nav .items + .items {
   margin-left: 50px;
 }
 
@@ -96,7 +115,7 @@ address {
   align-items: center;
 }
 
-.auth-nav .item + .item {
+.auth-nav .items + .items {
   margin-left: 50px;
 }
 
@@ -106,13 +125,14 @@ address {
 
 .hero-section {
   background-color: var(--grey-bgc);
-  margin-bottom: 94px;
-  text-align: center;
-  height: 600px;
 }
 
 .hero-section .container {
-  align-items: center;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 
 .hero-title {
@@ -123,9 +143,7 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   line-height: 1.36;
-
-  width: 700px;
-  margin: 0px auto 30px;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -147,8 +165,9 @@ address {
 
 /* ============= feachers =============*/
 
-.feachers > .container {
-  margin-bottom: 94px;
+.feachers .container {
+  padding-top: 94px;
+  padding-bottom: 47px;
 }
 
 .visually-hidden-title {
@@ -169,12 +188,9 @@ address {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
-  width: 1170px;
 }
 
 .feachers-list .items {
@@ -211,10 +227,9 @@ address {
 
 /*============= чем мы занимаемся ==========*/
 
-.container.work {
-  margin-top: 0px;
-  margin-bottom: 94px;
-  justify-content: center;
+.description .container {
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -232,8 +247,7 @@ address {
 
 .description .list {
   display: flex;
-  margin: 0px auto;
-  width: 1170px;
+  justify-content: space-between;
 }
 
 .description .items + .items {
@@ -241,14 +255,19 @@ address {
 }
 
 /* ========= НАША КОМАНДА ===========*/
+.team {
+  background-color: #f5f4fa;
+}
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .team .list {
   display: flex;
   padding: 0px;
   margin: 0px auto;
-  justify-content: center;
-  margin-bottom: 94px;
-  width: 1170px;
+  justify-content: space-between;
 }
 
 .team .items {
@@ -258,8 +277,9 @@ address {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
-.team .items + .items {
-  margin-left: 30px;
+.team-cards-descr {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .card-name {
@@ -269,6 +289,7 @@ address {
   text-align: center;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .card-text {
   color: var(--primary-text-color);
@@ -279,16 +300,14 @@ address {
   letter-spacing: 0.03em;
 }
 
-/*    footer    */
-
-.footer .container {
-  margin-left: 215px;
-  margin-right: 215px;
-  min-width: 1170px;
-}
+/*   =========== footer  ==============  */
 
 .footer {
   background-color: var(--grey-bgc);
+}
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo-text {
@@ -301,6 +320,7 @@ address {
 .footer .accent {
   color: var(--accent-color);
 }
+
 .contacts {
   font-size: 14px;
   line-height: 1.71em;
@@ -313,19 +333,27 @@ address {
   color: rgb(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71em;
-
   letter-spacing: 0.03em;
 }
 
-/* portfolio page  */
+.address {
+  font-style: normal;
+}
 
-/* main  */
+.address .items:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/*========== portfolio page ======== */
+
+/*===========  portfolio page / main ============= */
 
 .filter-list {
   display: flex;
   justify-content: center;
-  list-style: none;
+  margin-bottom: 50px;
 }
+
 .filter-button {
   color: var(--secondary-text-color);
   font-size: 16px;
@@ -358,25 +386,22 @@ address {
 
 .filter-list .filter-list-item + .filter-list-item {
   margin-left: 30px;
-  /* box-shadow: 0px 2px 2px 0px 0, 0, 0, 0, 25; */
 }
 
-.work-list {
-  width: 1170px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.project-list .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.work-list .list {
+.project-cards {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  margin-bottom: 94px;
 }
-.work-list .item {
-  flex-basis: calc(100% / 3-90px);
+
+.project-cards .items {
+  flex-basis: calc(100% / 3-60);
   margin-top: 30px;
   margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
